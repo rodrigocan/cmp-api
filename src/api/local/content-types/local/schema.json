@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locais",
+  "info": {
+    "singularName": "local",
+    "pluralName": "locais",
+    "displayName": "Local"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
