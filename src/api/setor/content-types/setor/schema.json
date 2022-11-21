@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "setores",
+  "info": {
+    "singularName": "setor",
+    "pluralName": "setores",
+    "displayName": "Setor"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "ramal": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
