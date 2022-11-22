@@ -4,7 +4,8 @@
   "info": {
     "singularName": "local",
     "pluralName": "locais",
-    "displayName": "Local"
+    "displayName": "Local",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -20,6 +21,34 @@
       "relation": "oneToMany",
       "target": "api::setor.setor",
       "mappedBy": "local"
+    },
+    "endereco": {
+      "type": "string",
+      "required": true
+    },
+    "numero": {
+      "type": "string",
+      "required": true
+    },
+    "cep": {
+      "type": "string",
+      "required": true
+    },
+    "cidade": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "string",
+      "required": true
+    },
+    "telefone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
     }
   }
 }
