@@ -4,17 +4,14 @@
   "info": {
     "singularName": "chamado",
     "pluralName": "chamados",
-    "displayName": "Chamado"
+    "displayName": "Chamado",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "tema": {
-      "type": "string",
-      "required": true
-    },
     "local": {
       "type": "relation",
       "relation": "manyToOne",
@@ -46,6 +43,23 @@
     },
     "data_hora_solucao": {
       "type": "datetime"
+    },
+    "servico": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::servico.servico"
+    },
+    "solicitante": {
+      "type": "string",
+      "required": true
+    },
+    "telefone_solicitante": {
+      "type": "string",
+      "required": true
+    },
+    "email_solicitante": {
+      "type": "email",
+      "required": true
     }
   }
 }
