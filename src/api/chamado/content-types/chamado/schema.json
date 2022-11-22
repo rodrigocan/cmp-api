@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chamados",
+  "info": {
+    "singularName": "chamado",
+    "pluralName": "chamados",
+    "displayName": "Chamado"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tema": {
+      "type": "string",
+      "required": true
+    },
+    "local": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::local.local",
+      "inversedBy": "chamados"
+    },
+    "setor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::setor.setor",
+      "inversedBy": "chamados"
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "default": "Em aberto"
+    },
+    "resumo": {
+      "type": "text",
+      "required": true
+    },
+    "diagnostico": {
+      "type": "text",
+      "required": true
+    },
+    "solucao": {
+      "type": "text",
+      "required": true
+    },
+    "data_hora_solucao": {
+      "type": "datetime"
+    }
+  }
+}

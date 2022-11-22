@@ -49,6 +49,12 @@
     "email": {
       "type": "string",
       "required": true
+    },
+    "chamados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chamado.chamado",
+      "mappedBy": "local"
     }
   }
 }

@@ -29,6 +29,12 @@
       "relation": "manyToOne",
       "target": "api::local.local",
       "inversedBy": "setores"
+    },
+    "chamados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chamado.chamado",
+      "mappedBy": "setor"
     }
   }
 }
