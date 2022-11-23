@@ -60,6 +60,12 @@
     "email_solicitante": {
       "type": "email",
       "required": true
+    },
+    "responsavel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "chamados"
     }
   }
 }
