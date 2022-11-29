@@ -35,11 +35,11 @@
     },
     "diagnostico": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "solucao": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "data_hora_solucao": {
       "type": "datetime"
