@@ -44,11 +44,6 @@
     "data_hora_solucao": {
       "type": "datetime"
     },
-    "servico": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::servico.servico"
-    },
     "solicitante": {
       "type": "string",
       "required": true
