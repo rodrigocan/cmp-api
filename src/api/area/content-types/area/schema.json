@@ -14,6 +14,12 @@
     "nome": {
       "type": "string",
       "required": true
+    },
+    "servicos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::servico.servico",
+      "mappedBy": "area"
     }
   }
 }
